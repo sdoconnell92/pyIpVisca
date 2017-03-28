@@ -34,6 +34,6 @@ def send_go_home():
 
 def recall_preset(preset_number):
     preset_byte = hex(preset_number)
-    print preset_byte
+    print(preset_byte)
 
 send_power_off()

@@ -5,20 +5,22 @@
 # control_comand = "0200"
 # control_reply = "0201"
 
-clear_seq = "01000000ffffffff".decode('hex')
+clear_seq =         b'\x01\x00\x00\x00\xff\xff\xff\xff'
 
 # go
-power_on = "01000006000000008101040002ff".decode('hex')
-power_off = "01000006000000008101040003ff".decode('hex')
-go_home = "010000050000000081010604ff".decode('hex')
-go_preset1 = "01000007000000008101043F0200ff".decode('hex')
-go_preset2 = "01000007000000008101043F0201ff".decode('hex')
-go_preset3 = "01000007000000008101043F0202ff".decode('hex')
-go_preset4 = "01000007000000008101043F0203ff".decode('hex')
+power_on =          b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x02\xff'
+power_off =         b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x03\xff'
+go_home =           b'\x01\x00\x00\x05\x00\x00\x00\x00\x81\x01\x06\x04\xff'
+go_preset1 =        b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x00\xff'
+go_preset2 =        b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x01\xff'
+go_preset3 =        b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x02\xff'
+go_preset4 =        b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x03\xff'
 
 # inquiry
-power_inq_com = "011000050000000081090400ff".decode('hex')
+power_inq_com =     b'\x01\x10\x00\x05\x00\x00\x00\x00\x81\x09\x04\x00\xff'
 
 # visca replies
-vrep_power_on = "0111000400000000905002ff".decode('hex')
-vrep_power_off = "0111000400000000905003ff".decode('hex')
+vrep_power_on =     b'\x01\x11\x00\x04\x00\x00\x00\x00\x90\x50\x02\xff'
+vrep_power_off =    b'\x01\x11\x00\x04\x00\x00\x00\x00\x90\x50\x03\xff'
+
+
