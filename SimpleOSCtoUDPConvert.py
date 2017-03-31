@@ -21,11 +21,11 @@ def wait_for_udp_packet(udp_ip, udp_port):
         # Try to convert the osc packet to udp
         # If it doesn't succeed due to unicode decode error
         #      This means that it is a message from the camera since it is in hex code
+        print("")
+        print("Received OSC Message: ", data)
+        print("Sending to converter...")
         try:
             convert_osc_udp(data.decode())
-            print("Received OSC Message: ", data)
-            print("Sending to converter...")
-            print("")
         except UnicodeDecodeError:
             pass
             print("Received Cam Message: ", data)
@@ -33,10 +33,19 @@ def wait_for_udp_packet(udp_ip, udp_port):
  
 def send_udp_packet(udp_ip, udp_port, message):
 
-    print("Sending UDP Packet to: " + udp_ip + ":" + udp_port + " |msg|: " + message)
+    print("Sending UDP Packet to: " + udp_ip + ":" + str(udp_port) + " |msg|: " + message)
     sock = socket.socket(socket.AF_INET, # Internet
                          socket.SOCK_DGRAM) # UDP
-    sock.sendto(message.decode('hex'), (udp_ip, udp_port))
+
+    try:
+        sock.sendto(message.decode('hex'), (udp_ip, udp_port))
+    except TypeError:
+        print("ERROR: Invalid hex message.")
+        print("INFO: Send Aborted")
+    except socket.error:
+        print("ERROR: Invalid listening address.")
+    except OverflowError:
+        print("ERROR: Overflow Error. Invalid port")
 
 
 def convert_osc_udp(message=""):
@@ -44,7 +53,7 @@ def convert_osc_udp(message=""):
 
     # Find where the end of the message is, marked by '<?>'
     x1 = message.find("<?>")
-    if x1 != 0:
+    if x1 != -1:
         # Strip off everything after '<?>' including '<?>
         message = message[:x1]
 
@@ -59,8 +68,14 @@ def convert_osc_udp(message=""):
 
             send_udp_packet(ip, port, hexstuff)
 
-            print("Send Complete.")
-            print("")
+        else:
+            # not the correct number of parameters
+            print("ERROR: Incorrect number of parameters, 3 expected (ip, port, hex command")
+
+    else:
+        # There is no '<?>'
+        print("ERROR: Syntax Error. ")
+        print("There is no end of command signifier, '<?>' is needed to signify end of command")
 
 if __name__ == '__main__':
 
@@ -72,3 +87,5 @@ if __name__ == '__main__':
     p = multiprocessing.Process(target=wait_for_udp_packet, args=(comp_ip, port))
     p.start()
     p.join()
+
+
