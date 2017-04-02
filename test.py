@@ -1,7 +1,8 @@
-from SimpleOSCtoUDPConvert import wait_for_udp_packet
 import socket
 
-try:
-    wait_for_udp_packet("192.168.10.22", -231)
-except OverflowError:
-    print"sadjfo"
+def my_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(('192.168.43.1', 52381))
+    return s.getsockname()[0]
+
+print my_ip()
