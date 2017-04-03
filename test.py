@@ -1,8 +1,10 @@
 import socket
 
-def my_ip():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect(('192.168.43.1', 52381))
-    return s.getsockname()[0]
+sock = socket.socket(socket.AF_INET,  # Internet
+                     socket.SOCK_DGRAM)  # UDP
+print("Listening On: 192.168.0.73:52381")
+sock.bind(("192.168.0.73", 52381))
+while True:
+    data, addr = sock.recvfrom(1024)
+    print(data.encode('hex'))
 
-print my_ip()

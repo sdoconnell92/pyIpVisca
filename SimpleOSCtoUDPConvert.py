@@ -90,16 +90,21 @@ class CameraConnection:
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.sock.connect((cam_ip, 52381))
         self.ComputerIP = self.sock.getsockname()[0]
+        self.sock.close()
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        # Initialize listening connection
+        self.ListenSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     def send_command(self, cam_command):
 
         # Create process for listening to the camera
-        q = multiprocessing.Queue
-        listen_process = multiprocessing.Process(target=self.listen_to_camera, args=q)
+        q = multiprocessing.Queue()
+        listen_process = multiprocessing.Process(target=self.listen_to_camera, args=(q,))
         listen_process.start()
 
         # Get a list of the messages to expect from the camera
-        codes = IpViscaCodes
+        codes = IpViscaCodes()
         expected_messages = codes.get_message_class(cam_command)
 
         ack_received = False
@@ -158,17 +163,19 @@ class CameraConnection:
         messages_from_cam = []
 
         if self.ComputerIP is not None:
-            sock.bind(self.ComputerIP, self.CamPort)
+            print("Computer Ip: " + self.ComputerIP)
+            print("Cam Port: " + str(self.CamPort))
+            self.ListenSocket.bind((self.ComputerIP, int(self.CamPort)))
 
         # Start listening
             while True:
                 # grab any messages
-                data, addr = sock.recvfrom(1024)
+                data, addr = self.ListenSocket.recvfrom(1024)
 
                 # need to check if this message is from our camera
                 if True:
-                    print("Received Camera Message ( " + addr + "): " + data)
-                    msg = CameraMessagesData
+                    print("Received Camera Message ( " + str(addr) + "): " + str(data))
+                    msg = CameraMessagesData()
                     msg.data = data
                     msg.addr = addr
                     messages_from_cam.append(msg)
@@ -213,7 +220,7 @@ class IpViscaCodes:
 
     def __init__(self):
         # Utility
-        clear_seq = ExpectedCameraReturn(cam_command='\x01\x00\x00\x00\xff\xff\xff\xff',
+        clear_seq = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x00\xff\xff\xff\xff',
                                          reset_message='\x00',
                                          acknowledgement='\x00',
                                          completion='\x00',
@@ -235,9 +242,9 @@ class IpViscaCodes:
 
         # Go Commands
         go_home = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x05\x00\x00\x00\x00\x81\x01\x06\x04\xff',
-                                       reset_message='\x00',
-                                       acknowledgement='\x00',
-                                       completion='\x00',
+                                       reset_message='\x02\x01\x00\x01\xff\xff\xff\xff\x01',
+                                       acknowledgement='\x01\x11\x00\x03\x00\x00\x00\x00\x90\x41\xff',
+                                       completion='\x01\x11\x00\x03\x00\x00\x00\x00\x90\x51\xff',
                                        timeout=1)
         self.GoHome = go_home
         go_preset_0 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x00\xff',
@@ -337,8 +344,9 @@ class IpViscaCodes:
                                            timeout=7)
         self.GoPresetF = go_preset_f
 
-    def get_message_class(self, cam_command):
-
+    def get_message_class(self, camera_command):
+        cam_command = camera_command.decode('hex')
+        print("cam_command: " + cam_command)
         if cam_command == self.ClearSeq.CamCommand:
             return self.ClearSeq
         elif cam_command == self.PowerOn.CamCommand:
