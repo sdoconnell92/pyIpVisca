@@ -4,34 +4,8 @@ import socket
 import multiprocessing
 import time
 
-# ---------------------------------------------------------------------------------
-# IP Visca Codes
-# ---------------------------------------------------------------------------------
-clear_seq = b'\x01\x00\x00\x00\xff\xff\xff\xff'
 
-# go
-power_on = b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x02\xff'
-power_off = b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x03\xff'
-go_home = b'\x01\x00\x00\x05\x00\x00\x00\x00\x81\x01\x06\x04\xff'
-go_preset_0 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x00\xff'
-go_preset_1 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x01\xff'
-go_preset_2 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x02\xff'
-go_preset_3 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x03\xff'
-go_preset_4 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x04\xff'
-go_preset_5 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x05\xff'
-go_preset_6 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x06\xff'
-go_preset_7 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x07\xff'
-go_preset_8 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x08\xff'
-go_preset_9 = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x09\xff'
-go_preset_a = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0a\xff'
-go_preset_b  = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0b\xff'
-go_preset_c = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0c\xff'
-go_preset_d = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0d\xff'
-go_preset_e = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0e\xff'
-go_preset_f = b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0f\xff'
-
-
-class OscCommandListener():
+class OscCommandListener:
 
     def __init__(self, osc_ip, osc_port):
         self.OscIP = osc_ip
@@ -105,7 +79,7 @@ class OscCommandListener():
             print("There is no end of command signifier, '<?>' is needed to signify end of command")
 
 
-class CameraConnection():
+class CameraConnection:
 
     def __init__(self, cam_ip, cam_port):
         self.CamIP = cam_ip
@@ -125,7 +99,8 @@ class CameraConnection():
         listen_process.start()
 
         # Get a list of the messages to expect from the camera
-        expected_messages = ExpectedCameraReturn(cam_command)
+        codes = IpViscaCodes
+        expected_messages = codes.get_message_class(cam_command)
 
         ack_received = False
         comp_received = False
@@ -212,13 +187,12 @@ class CameraMessagesData:
 
 class ExpectedCameraReturn:
 
-    def __init__(self, cam_command):
+    def __init__(self, cam_command, reset_message, acknowledgement, completion, timeout):
+        self.CamCommand = cam_command
         self.ResetMessage = None
         self.Acknowledgement = None
         self.Completion = None
         self.Timeout = 10 * 1000
-
-        # Fill out the message variables based on the cam_command
 
     def check_message(self, cam_message):
 
@@ -232,16 +206,184 @@ class ExpectedCameraReturn:
             return None
 
 
+# ---------------------------------------------------------------------------------
+# IP Visca Codes
+# ---------------------------------------------------------------------------------
+class IpViscaCodes:
+
+    def __init__(self):
+        # Utility
+        clear_seq = ExpectedCameraReturn(cam_command='\x01\x00\x00\x00\xff\xff\xff\xff',
+                                         reset_message='\x00',
+                                         acknowledgement='\x00',
+                                         completion='\x00',
+                                         timeout=0.2)
+        self.ClearSeq = clear_seq
+        power_on = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x02\xff',
+                                        reset_message='\x00',
+                                        acknowledgement='\x00',
+                                        completion='\x00',
+                                        timeout=1)
+        self.PowerOn = power_on
+        power_off = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x06\x00\x00\x00\x00\x81\x01\x04\x00\x03\xff',
+                                         reset_message='\x00',
+                                         acknowledgement='\x00',
+                                         completion='\x00',
+                                         timeout=1)
+
+        self.PowerOff = power_off
+
+        # Go Commands
+        go_home = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x05\x00\x00\x00\x00\x81\x01\x06\x04\xff',
+                                       reset_message='\x00',
+                                       acknowledgement='\x00',
+                                       completion='\x00',
+                                       timeout=1)
+        self.GoHome = go_home
+        go_preset_0 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x00\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=1)
+        self.GoPreset0 = go_preset_0
+        go_preset_1 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x01\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset1 = go_preset_1
+        go_preset_2 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x02\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset2 = go_preset_2
+        go_preset_3 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x03\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset3 = go_preset_3
+        go_preset_4 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x04\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset4 = go_preset_4
+        go_preset_5 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x05\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset5 = go_preset_5
+        go_preset_6 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x06\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset6 = go_preset_6
+        go_preset_7 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x07\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset7 = go_preset_7
+        go_preset_8 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x08\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset8 = go_preset_8
+        go_preset_9 = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x09\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPreset9 = go_preset_9
+        go_preset_a = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0a\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetA = go_preset_a
+        go_preset_b = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0b\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetB = go_preset_b
+        go_preset_c = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3f\x02\x0c\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetC = go_preset_c
+        go_preset_d = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x0d\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetD = go_preset_d
+        go_preset_e = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x0e\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetE = go_preset_e
+        go_preset_f = ExpectedCameraReturn(cam_command=b'\x01\x00\x00\x07\x00\x00\x00\x00\x81\x01\x04\x3F\x02\x0f\xff',
+                                           reset_message='\x00',
+                                           acknowledgement='\x00',
+                                           completion='\x00',
+                                           timeout=7)
+        self.GoPresetF = go_preset_f
+
+    def get_message_class(self, cam_command):
+
+        if cam_command == self.ClearSeq.CamCommand:
+            return self.ClearSeq
+        elif cam_command == self.PowerOn.CamCommand:
+            return self.PowerOn
+        elif cam_command == self.PowerOff.CamCommand:
+            return self.PowerOff
+        elif cam_command == self.GoPreset0.CamCommand:
+            return self.GoPreset0
+        elif cam_command == self.GoPreset1.CamCommand:
+            return self.GoPreset1
+        elif cam_command == self.GoPreset2.CamCommand:
+            return self.GoPreset2
+        elif cam_command == self.GoPreset3.CamCommand:
+            return self.GoPreset3
+        elif cam_command == self.GoPreset4.CamCommand:
+            return self.GoPreset4
+        elif cam_command == self.GoPreset5.CamCommand:
+            return self.GoPreset5
+        elif cam_command == self.GoPreset6.CamCommand:
+            return self.GoPreset6
+        elif cam_command == self.GoPreset7.CamCommand:
+            return self.GoPreset7
+        elif cam_command == self.GoPreset8.CamCommand:
+            return self.GoPreset8
+        elif cam_command == self.GoPreset9.CamCommand:
+            return self.GoPreset9
+        elif cam_command == self.GoPresetA.CamCommand:
+            return self.GoPresetA
+        elif cam_command == self.GoPresetB.CamCommand:
+            return self.GoPresetB
+        elif cam_command == self.GoPresetC.CamCommand:
+            return self.GoPresetC
+        elif cam_command == self.GoPresetD.CamCommand:
+            return self.GoPresetD
+        elif cam_command == self.GoPresetE.CamCommand:
+            return self.GoPresetE
+        elif cam_command == self.GoPresetF.CamCommand:
+            return self.GoPresetF
+
 
 if __name__ == '__main__':
 
     # Set the address and port to listen on
-    comp_ip = "localhost"
-    port = 52381
-    cam_net_comp_ip = "0.0.0.0"
+    OscIp = "localhost"
+    OscPort = 52381
 
-    # Start the listener
-    p = multiprocessing.Process(target=wait_for_udp_packet, args=(comp_ip, port))
-    p.start()
-
-
+    # Create OscCommandListener class
+    listener = OscCommandListener(osc_ip=OscIp, osc_port=OscPort)
