@@ -2,6 +2,10 @@
 
 import socket
 import multiprocessing
+import time
+
+
+clear_message = '01000000ffffffff'
 
 
 # Function for receiving all udp packets on specified network: for us localhost
@@ -33,10 +37,23 @@ def wait_for_udp_packet(udp_ip, udp_port):
  
 def send_udp_packet(udp_ip, udp_port, message):
 
-    print("Sending UDP Packet to: " + udp_ip + ":" + str(udp_port) + " |msg|: " + message)
+    # Initialize socket
     sock = socket.socket(socket.AF_INET, # Internet
                          socket.SOCK_DGRAM) # UDP
 
+    print("Sending Clear Message to: " + udp_ip + ":" + str(udp_port) + "|msg|: " + clear_message)
+    try:
+        sock.sendto(clear_message.decode('hex'), (udp_ip, udp_port))
+    except TypeError:
+        print("ERROR: Type error thrown when trying to send clear message.")
+    except socket.error:
+        print("ERROR: Invalid listening address.")
+    except OverflowError:
+        print("ERROR: Overflow Error. Invalid port?")
+
+    time.sleep(0.01)
+
+    print("Sending UDP Packet to: " + udp_ip + ":" + str(udp_port) + " |msg|: " + message)
     try:
         sock.sendto(message.decode('hex'), (udp_ip, udp_port))
     except TypeError:
@@ -45,7 +62,7 @@ def send_udp_packet(udp_ip, udp_port, message):
     except socket.error:
         print("ERROR: Invalid listening address.")
     except OverflowError:
-        print("ERROR: Overflow Error. Invalid port")
+        print("ERROR: Overflow Error. Invalid port?")
 
 
 def convert_osc_udp(message=""):
