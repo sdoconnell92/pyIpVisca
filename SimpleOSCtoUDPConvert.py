@@ -4,6 +4,7 @@ import socket
 import multiprocessing
 import time
 
+version = "1.03"
 
 clear_message = '01000000ffffffff'
 
@@ -95,6 +96,8 @@ def convert_osc_udp(message=""):
         print("There is no end of command signifier, '<?>' is needed to signify end of command")
 
 if __name__ == '__main__':
+
+    print("Version: " + version)
 
     # Set the address and port to listen on
     comp_ip = "localhost"
