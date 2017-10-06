@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/PyIPVisca_UnitTest.py" description="# Initialize socket" line="42" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea214d0-2b39-4e7e-803e-649458054491" name="Default" comment="" />
+    <list default="true" id="dea214d0-2b39-4e7e-803e-649458054491" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utl/TestSequence.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PyIPVisca_UnitTest_rapid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PyIPVisca_UnitTest_multiCamera.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/maybethiswork.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HitTheGap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CamListenner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PyIPVisca_UnitTest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logingfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doublemessage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ip_visca_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SystemLogging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logfilepython.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TrackDownProblem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Midi_Listener.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyIPVisca_FromOSC.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test 4.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClassBased.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comunications.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmdbufferclear.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SimpleOSCtoUDPConvert.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Midi_Message_Send.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pyIPVisca.py" afterPath="$PROJECT_DIR$/src/pyIPVisca.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,49 +45,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="maybethiswork.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/maybethiswork.py">
+      <file leaf-file-name="pyIPVisca.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pyIPVisca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4284">
-              <caret line="290" column="26" lean-forward="true" selection-start-line="290" selection-start-column="26" selection-end-line="290" selection-end-column="26" />
+            <state relative-caret-position="-2006">
+              <caret line="340" column="22" lean-forward="false" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#2187#2217#0" expanded="false" />
-                <element signature="e#3337#3447#0" expanded="false" />
-                <element signature="e#5068#6623#0" expanded="false" />
-                <element signature="e#8813#9096#0" expanded="false" />
-                <element signature="e#9128#9247#0" expanded="false" />
+                <element signature="e#180#1485#0" expanded="false" />
+                <element signature="e#1529#2126#0" expanded="false" />
+                <element signature="e#2186#2705#0" expanded="false" />
+                <element signature="e#4487#9598#0" expanded="false" />
+                <element signature="e#10678#12476#0" expanded="false" />
+                <element signature="e#10722#10835#0" expanded="false" />
+                <element signature="e#10866#12110#0" expanded="false" />
+                <element signature="e#12154#12476#0" expanded="false" />
+                <element signature="e#12502#14362#0" expanded="false" />
+                <element signature="e#12546#12659#0" expanded="false" />
+                <element signature="e#12691#13978#0" expanded="false" />
+                <element signature="e#14042#14362#0" expanded="false" />
+                <element signature="e#16632#18305#0" expanded="false" />
+                <element signature="e#18331#21128#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdbufferclear.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdbufferclear.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="doublemessage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doublemessage.py">
+        <entry file="file://$PROJECT_DIR$/utl/doublemessage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            <state relative-caret-position="3045">
+              <caret line="148" column="15" lean-forward="false" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CamListenner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CamListenner.py">
+      <file leaf-file-name="TestThreadPers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utl/TestThreadPers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,13 +108,28 @@
       <find>stringtohex</find>
       <find>CamMessage</find>
       <find>self.ActiveMessageBuffer[message.BufferIndex] = CamMessages()</find>
+      <find>addcamera</find>
+      <find>print</find>
+      <find>IncThr</find>
+      <find>OutThr</find>
+      <find>'__name__</find>
+      <find>__name__'</find>
+      <find>convertto_cammessage</find>
+      <find>converttostring</find>
+      <find>d = time.time() - self.ActiveMessage.SentTime</find>
+      <find>get_seq_string</find>
     </findStrings>
     <replaceStrings>
       <replace>hextostring</replace>
       <replace>self.ActiveMessage = None</replace>
+      <replace>add_camera</replace>
+      <replace>safe_print</replace>
+      <replace>out_thr</replace>
+      <replace>d = time.time() - self.ActiveMessage.CamMessage.SentTime</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -119,10 +159,15 @@
         <option value="$PROJECT_DIR$/PyIPVisca_UnitTest.py" />
         <option value="$PROJECT_DIR$/SimpleOSCtoUDPConvert.py" />
         <option value="$PROJECT_DIR$/pyIPVisca.py" />
-        <option value="$PROJECT_DIR$/src/pyIPVisca.py" />
         <option value="$PROJECT_DIR$/cmdbufferclear.py" />
         <option value="$PROJECT_DIR$/doublemessage.py" />
         <option value="$PROJECT_DIR$/src/maybethiswork.py" />
+        <option value="$PROJECT_DIR$/utl/CamListenner.py" />
+        <option value="$PROJECT_DIR$/utl/TestSequence.py" />
+        <option value="$PROJECT_DIR$/utl/loggingtest.py" />
+        <option value="$PROJECT_DIR$/utl/TestThreadPers.py" />
+        <option value="$PROJECT_DIR$/utl/doublemessage.py" />
+        <option value="$PROJECT_DIR$/src/pyIPVisca.py" />
       </list>
     </option>
   </component>
@@ -131,6 +176,9 @@
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1048" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -147,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,21 +217,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyIpVisca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyIpVisca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyIpVisca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyIpVisca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sean\WorthSaving\repos\pyIpVisca\leg" />
+      <recent name="C:\Users\sean\WorthSaving\repos\pyIpVisca\utl" />
       <recent name="C:\Users\sean\WorthSaving\repos\pyIpVisca\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -203,61 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.maybethiswork">
-    <configuration default="false" name="CamListenner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyIpVisca" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CamListenner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cmdbufferclear" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyIpVisca" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cmdbufferclear.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="doublemessage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyIpVisca" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/doublemessage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.doublemessage (1)">
     <configuration default="false" name="pyIPVisca" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,6 +313,60 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyIpVisca" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/maybethiswork.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyIpVisca" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utl/TestSequence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="doublemessage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyIpVisca" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utl/doublemessage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestThreadPers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyIpVisca" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utl/TestThreadPers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,19 +469,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.CamListenner" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cmdbufferclear" />
-      <item index="2" class="java.lang.String" itemvalue="Python.doublemessage" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pyIPVisca" />
-      <item index="4" class="java.lang.String" itemvalue="Python.maybethiswork" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pyIPVisca" />
+      <item index="1" class="java.lang.String" itemvalue="Python.maybethiswork" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TestSequence" />
+      <item index="3" class="java.lang.String" itemvalue="Python.doublemessage (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestThreadPers" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.maybethiswork" />
-        <item index="1" class="java.lang.String" itemvalue="Python.doublemessage" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cmdbufferclear" />
-        <item index="3" class="java.lang.String" itemvalue="Python.CamListenner" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pyIPVisca" />
+        <item index="0" class="java.lang.String" itemvalue="Python.doublemessage (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pyIPVisca" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TestThreadPers" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TestSequence" />
+        <item index="4" class="java.lang.String" itemvalue="Python.maybethiswork" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -443,14 +521,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31002086" sideWeight="0.4960894" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.4960894" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30406147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11211" sideWeight="0.5039106" order="2" side_tool="true" content_ui="tabs" />
@@ -471,18 +550,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test 4.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/ip_visca_codes.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/comunications.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test.py" />
-    <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test2.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test3.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/ip_visca_codes.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/comunications.py" />
@@ -511,194 +590,106 @@
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test3.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/pyipviscawork/test 4.py" />
-    <entry file="file://$PROJECT_DIR$/Midi_Listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logingfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrackDownProblem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="41" column="83" lean-forward="false" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logfilepython.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest_rapid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="70" column="44" lean-forward="false" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest_multiCamera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SystemLogging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyIPVisca_FromOSC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test 4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ip_visca_codes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="104" column="172" lean-forward="false" selection-start-line="104" selection-start-column="172" selection-end-line="104" selection-end-column="172" />
-          <folding>
-            <element signature="e#0#16#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Midi_Message_Send.py">
+    <entry file="file://$PROJECT_DIR$/logingfile" />
+    <entry file="file://$PROJECT_DIR$/logfilepython.log" />
+    <entry file="file://$PROJECT_DIR$/test2.py" />
+    <entry file="file://$PROJECT_DIR$/test3.py" />
+    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest_rapid.py" />
+    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest_multiCamera.py" />
+    <entry file="file://$PROJECT_DIR$/pyIPVisca_FromOSC.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/test 4.py" />
+    <entry file="file://$PROJECT_DIR$/ip_visca_codes.py" />
+    <entry file="file://$PROJECT_DIR$/PyIPVisca_UnitTest.py" />
+    <entry file="file://$PROJECT_DIR$/utl/Midi_Message_Send.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HitTheGap.py">
+    <entry file="file://$PROJECT_DIR$/HitTheGap.py" />
+    <entry file="file://$PROJECT_DIR$/comunications.py" />
+    <entry file="file://$PROJECT_DIR$/leg/SimpleOSCtoUDPConvert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="52" />
+        <state relative-caret-position="-420">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClassBased.py">
+    <entry file="file://$PROJECT_DIR$/src/maybethiswork.py" />
+    <entry file="file://$PROJECT_DIR$/ClassBased.py" />
+    <entry file="file://$PROJECT_DIR$/utl/CamListenner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2331">
-          <caret line="112" column="47" lean-forward="false" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
+        <state relative-caret-position="588">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comunications.py">
+    <entry file="file://$PROJECT_DIR$/Midi_Listener.py" />
+    <entry file="file://$PROJECT_DIR$/SystemLogging.py" />
+    <entry file="file://$PROJECT_DIR$/TrackDownProblem.py" />
+    <entry file="file://C:/Python27/Lib/encodings/hex_codec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utl/loggingtest.py" />
+    <entry file="file://$PROJECT_DIR$/utl/cmdbufferclear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utl/TestSequence.py" />
+    <entry file="file://C:/Python27/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4165">
+          <caret line="468" column="0" lean-forward="false" selection-start-line="468" selection-start-column="0" selection-end-line="468" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utl/TestThreadPers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utl/doublemessage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="148" column="15" lean-forward="false" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pyIPVisca.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="-2006">
+          <caret line="340" column="22" lean-forward="false" selection-start-line="340" selection-start-column="8" selection-end-line="340" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#6560#8562#0" expanded="false" />
-            <element signature="e#8595#9163#0" expanded="false" />
-            <element signature="e#9956#11508#0" expanded="false" />
-            <element signature="e#11535#12506#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleOSCtoUDPConvert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#22#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdbufferclear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CamListenner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doublemessage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maybethiswork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4284">
-          <caret line="290" column="26" lean-forward="true" selection-start-line="290" selection-start-column="26" selection-end-line="290" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#2187#2217#0" expanded="false" />
-            <element signature="e#3337#3447#0" expanded="false" />
-            <element signature="e#5068#6623#0" expanded="false" />
-            <element signature="e#8813#9096#0" expanded="false" />
-            <element signature="e#9128#9247#0" expanded="false" />
+            <element signature="e#180#1485#0" expanded="false" />
+            <element signature="e#1529#2126#0" expanded="false" />
+            <element signature="e#2186#2705#0" expanded="false" />
+            <element signature="e#4487#9598#0" expanded="false" />
+            <element signature="e#10678#12476#0" expanded="false" />
+            <element signature="e#10722#10835#0" expanded="false" />
+            <element signature="e#10866#12110#0" expanded="false" />
+            <element signature="e#12154#12476#0" expanded="false" />
+            <element signature="e#12502#14362#0" expanded="false" />
+            <element signature="e#12546#12659#0" expanded="false" />
+            <element signature="e#12691#13978#0" expanded="false" />
+            <element signature="e#14042#14362#0" expanded="false" />
+            <element signature="e#16632#18305#0" expanded="false" />
+            <element signature="e#18331#21128#0" expanded="false" />
           </folding>
         </state>
       </provider>

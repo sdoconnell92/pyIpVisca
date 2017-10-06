@@ -1,0 +1,437 @@
+2017-10-03 15:36:00,674 - root       - INFO     - Starting pyIPVisca
+2017-10-03 15:36:00,676 - __main__   - DEBUG    - Checking if Camera 1 is present in Camera Message Router CamList
+2017-10-03 15:36:00,676 - __main__   - DEBUG    - Adding Camera 1 to Camera Message Router
+2017-10-03 15:36:00,676 - __main__   - DEBUG    - Checking if Camera 1 is present in OSC Message Listener CamList
+2017-10-03 15:36:00,676 - __main__   - DEBUG    - Adding Camera 1 to OSC Message Listener
+2017-10-03 15:36:00,676 - __main__   - INFO     - Starting Incoming Processor for Camera 1
+2017-10-03 15:36:00,676 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 1
+2017-10-03 15:36:00,676 - __main__   - INFO     - Starting Outgoing Processor for Camera 1
+2017-10-03 15:36:00,677 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-03 15:36:00,677 - __main__   - DEBUG    - Checking if Camera 2 is present in Camera Message Router CamList
+2017-10-03 15:36:00,677 - __main__   - DEBUG    - Adding Camera 2 to Camera Message Router
+2017-10-03 15:36:00,677 - __main__   - DEBUG    - Checking if Camera 2 is present in OSC Message Listener CamList
+2017-10-03 15:36:00,677 - __main__   - DEBUG    - Adding Camera 2 to OSC Message Listener
+2017-10-03 15:36:00,677 - __main__   - INFO     - Starting Incoming Processor for Camera 2
+2017-10-03 15:36:00,678 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 2
+2017-10-03 15:36:00,678 - __main__   - INFO     - Starting Outgoing Processor for Camera 2
+2017-10-03 15:36:00,678 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 2
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Checking if Camera 3 is present in Camera Message Router CamList
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Adding Camera 3 to Camera Message Router
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Checking if Camera 3 is present in OSC Message Listener CamList
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Adding Camera 3 to OSC Message Listener
+2017-10-03 15:36:00,680 - __main__   - INFO     - Starting Incoming Processor for Camera 3
+2017-10-03 15:36:00,680 - __main__   - INFO     - Starting Outgoing Processor for Camera 3
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 3
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 3
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Checking if Camera 4 is present in Camera Message Router CamList
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Adding Camera 4 to Camera Message Router
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Checking if Camera 4 is present in OSC Message Listener CamList
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Adding Camera 4 to OSC Message Listener
+2017-10-03 15:36:00,680 - __main__   - INFO     - Starting Incoming Processor for Camera 4
+2017-10-03 15:36:00,680 - __main__   - INFO     - Starting Outgoing Processor for Camera 4
+2017-10-03 15:36:00,680 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 4
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 4
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Checking if Camera 5 is present in Camera Message Router CamList
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Adding Camera 5 to Camera Message Router
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Checking if Camera 5 is present in OSC Message Listener CamList
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Adding Camera 5 to OSC Message Listener
+2017-10-03 15:36:00,681 - __main__   - INFO     - Starting Incoming Processor for Camera 5
+2017-10-03 15:36:00,681 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 5
+2017-10-03 15:36:00,681 - __main__   - INFO     - Starting Outgoing Processor for Camera 5
+2017-10-03 15:36:00,683 - root       - INFO     - Starting OSC Listener
+2017-10-03 15:36:00,683 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 5
+2017-10-03 15:36:00,683 - root       - INFO     - Starting Camera Message Router
+2017-10-03 15:36:00,684 - __main__   - DEBUG    - Initializing Camera Router Socket
+2017-10-03 15:36:00,687 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-03 15:57:29,052 - root       - INFO     - Starting pyIPVisca
+2017-10-03 15:57:29,052 - __main__   - DEBUG    - Checking if Camera 1 is present in Camera Message Router CamList
+2017-10-03 15:57:29,052 - __main__   - DEBUG    - Adding Camera 1 to Camera Message Router
+2017-10-03 15:57:29,052 - __main__   - DEBUG    - Checking if Camera 1 is present in OSC Message Listener CamList
+2017-10-03 15:57:29,052 - __main__   - DEBUG    - Adding Camera 1 to OSC Message Listener
+2017-10-03 15:57:29,052 - __main__   - INFO     - Starting Incoming Processor for Camera 1
+2017-10-03 15:57:29,052 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 1
+2017-10-03 15:57:29,052 - __main__   - INFO     - Starting Outgoing Processor for Camera 1
+2017-10-03 15:57:29,053 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-03 15:57:29,053 - __main__   - DEBUG    - Checking if Camera 2 is present in Camera Message Router CamList
+2017-10-03 15:57:29,055 - __main__   - DEBUG    - Adding Camera 2 to Camera Message Router
+2017-10-03 15:57:29,055 - __main__   - DEBUG    - Checking if Camera 2 is present in OSC Message Listener CamList
+2017-10-03 15:57:29,055 - __main__   - DEBUG    - Adding Camera 2 to OSC Message Listener
+2017-10-03 15:57:29,055 - __main__   - INFO     - Starting Incoming Processor for Camera 2
+2017-10-03 15:57:29,055 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 2
+2017-10-03 15:57:29,055 - __main__   - INFO     - Starting Outgoing Processor for Camera 2
+2017-10-03 15:57:29,056 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 2
+2017-10-03 15:57:29,056 - __main__   - DEBUG    - Checking if Camera 3 is present in Camera Message Router CamList
+2017-10-03 15:57:29,056 - __main__   - DEBUG    - Adding Camera 3 to Camera Message Router
+2017-10-03 15:57:29,056 - __main__   - DEBUG    - Checking if Camera 3 is present in OSC Message Listener CamList
+2017-10-03 15:57:29,056 - __main__   - DEBUG    - Adding Camera 3 to OSC Message Listener
+2017-10-03 15:57:29,056 - __main__   - INFO     - Starting Incoming Processor for Camera 3
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 3
+2017-10-03 15:57:29,058 - __main__   - INFO     - Starting Outgoing Processor for Camera 3
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 3
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Checking if Camera 4 is present in Camera Message Router CamList
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Adding Camera 4 to Camera Message Router
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Checking if Camera 4 is present in OSC Message Listener CamList
+2017-10-03 15:57:29,058 - __main__   - DEBUG    - Adding Camera 4 to OSC Message Listener
+2017-10-03 15:57:29,058 - __main__   - INFO     - Starting Incoming Processor for Camera 4
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 4
+2017-10-03 15:57:29,059 - __main__   - INFO     - Starting Outgoing Processor for Camera 4
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 4
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Checking if Camera 5 is present in Camera Message Router CamList
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Adding Camera 5 to Camera Message Router
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Checking if Camera 5 is present in OSC Message Listener CamList
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Adding Camera 5 to OSC Message Listener
+2017-10-03 15:57:29,059 - __main__   - INFO     - Starting Incoming Processor for Camera 5
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 5
+2017-10-03 15:57:29,059 - __main__   - INFO     - Starting Outgoing Processor for Camera 5
+2017-10-03 15:57:29,059 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 5
+2017-10-03 15:57:29,059 - root       - INFO     - Starting OSC Listener
+2017-10-03 15:57:29,059 - root       - INFO     - Starting Camera Message Router
+2017-10-03 15:57:29,061 - __main__   - DEBUG    - Initializing Camera Router Socket
+2017-10-03 15:57:29,065 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 12:35:45,322 - root       - INFO     - Starting pyIPVisca
+2017-10-04 12:35:45,322 - __main__   - DEBUG    - Checking if Camera 1 is present in Camera Message Router CamList
+2017-10-04 12:35:45,322 - __main__   - DEBUG    - Adding Camera 1 to Camera Message Router
+2017-10-04 12:35:45,322 - __main__   - DEBUG    - Checking if Camera 1 is present in OSC Message Listener CamList
+2017-10-04 12:35:45,322 - __main__   - DEBUG    - Adding Camera 1 to OSC Message Listener
+2017-10-04 12:35:45,322 - __main__   - INFO     - Starting Incoming Processor for Camera 1
+2017-10-04 12:35:45,323 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 1
+2017-10-04 12:35:45,323 - __main__   - INFO     - Starting Outgoing Processor for Camera 1
+2017-10-04 12:35:45,323 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-04 12:35:45,323 - __main__   - DEBUG    - Checking if Camera 2 is present in Camera Message Router CamList
+2017-10-04 12:35:45,323 - __main__   - DEBUG    - Adding Camera 2 to Camera Message Router
+2017-10-04 12:35:45,323 - __main__   - DEBUG    - Checking if Camera 2 is present in OSC Message Listener CamList
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Adding Camera 2 to OSC Message Listener
+2017-10-04 12:35:45,325 - __main__   - INFO     - Starting Incoming Processor for Camera 2
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 2
+2017-10-04 12:35:45,325 - __main__   - INFO     - Starting Outgoing Processor for Camera 2
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 2
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Checking if Camera 3 is present in Camera Message Router CamList
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Adding Camera 3 to Camera Message Router
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Checking if Camera 3 is present in OSC Message Listener CamList
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Adding Camera 3 to OSC Message Listener
+2017-10-04 12:35:45,325 - __main__   - INFO     - Starting Incoming Processor for Camera 3
+2017-10-04 12:35:45,325 - __main__   - INFO     - Starting Outgoing Processor for Camera 3
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 3
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 3
+2017-10-04 12:35:45,325 - __main__   - DEBUG    - Checking if Camera 4 is present in Camera Message Router CamList
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Adding Camera 4 to Camera Message Router
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Checking if Camera 4 is present in OSC Message Listener CamList
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Adding Camera 4 to OSC Message Listener
+2017-10-04 12:35:45,326 - __main__   - INFO     - Starting Incoming Processor for Camera 4
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 4
+2017-10-04 12:35:45,326 - __main__   - INFO     - Starting Outgoing Processor for Camera 4
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 4
+2017-10-04 12:35:45,326 - __main__   - DEBUG    - Checking if Camera 5 is present in Camera Message Router CamList
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Adding Camera 5 to Camera Message Router
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Checking if Camera 5 is present in OSC Message Listener CamList
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Adding Camera 5 to OSC Message Listener
+2017-10-04 12:35:45,328 - __main__   - INFO     - Starting Incoming Processor for Camera 5
+2017-10-04 12:35:45,328 - __main__   - INFO     - Starting Outgoing Processor for Camera 5
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 5
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 5
+2017-10-04 12:35:45,328 - root       - INFO     - Starting OSC Listener
+2017-10-04 12:35:45,328 - root       - INFO     - Starting Camera Message Router
+2017-10-04 12:35:45,328 - __main__   - DEBUG    - Initializing Camera Router Socket
+2017-10-04 12:35:45,332 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 16:52:06,904 - root       - INFO     - Starting pyIPVisca
+2017-10-04 16:52:06,904 - __main__   - DEBUG    - Checking if Camera 1 is present in Camera Message Router CamList
+2017-10-04 16:52:06,904 - __main__   - DEBUG    - Adding Camera 1 to Camera Message Router
+2017-10-04 16:52:06,904 - __main__   - DEBUG    - Checking if Camera 1 is present in OSC Message Listener CamList
+2017-10-04 16:52:06,904 - __main__   - DEBUG    - Adding Camera 1 to OSC Message Listener
+2017-10-04 16:52:06,904 - __main__   - INFO     - Starting Incoming Processor for Camera 1
+2017-10-04 16:52:06,905 - __main__   - INFO     - Starting Outgoing Processor for Camera 1
+2017-10-04 16:52:06,905 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 1
+2017-10-04 16:52:06,905 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-04 16:52:06,905 - __main__   - DEBUG    - Checking if Camera 2 is present in Camera Message Router CamList
+2017-10-04 16:52:06,907 - __main__   - DEBUG    - Adding Camera 2 to Camera Message Router
+2017-10-04 16:52:06,907 - __main__   - DEBUG    - Checking if Camera 2 is present in OSC Message Listener CamList
+2017-10-04 16:52:06,907 - __main__   - DEBUG    - Adding Camera 2 to OSC Message Listener
+2017-10-04 16:52:06,907 - __main__   - INFO     - Starting Incoming Processor for Camera 2
+2017-10-04 16:52:06,907 - __main__   - INFO     - Starting Outgoing Processor for Camera 2
+2017-10-04 16:52:06,907 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 2
+2017-10-04 16:52:06,908 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 2
+2017-10-04 16:52:06,908 - __main__   - DEBUG    - Checking if Camera 3 is present in Camera Message Router CamList
+2017-10-04 16:52:06,910 - __main__   - DEBUG    - Adding Camera 3 to Camera Message Router
+2017-10-04 16:52:06,910 - __main__   - DEBUG    - Checking if Camera 3 is present in OSC Message Listener CamList
+2017-10-04 16:52:06,910 - __main__   - DEBUG    - Adding Camera 3 to OSC Message Listener
+2017-10-04 16:52:06,910 - __main__   - INFO     - Starting Incoming Processor for Camera 3
+2017-10-04 16:52:06,910 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 3
+2017-10-04 16:52:06,910 - __main__   - INFO     - Starting Outgoing Processor for Camera 3
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 3
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Checking if Camera 4 is present in Camera Message Router CamList
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Adding Camera 4 to Camera Message Router
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Checking if Camera 4 is present in OSC Message Listener CamList
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Adding Camera 4 to OSC Message Listener
+2017-10-04 16:52:06,911 - __main__   - INFO     - Starting Incoming Processor for Camera 4
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 4
+2017-10-04 16:52:06,911 - __main__   - INFO     - Starting Outgoing Processor for Camera 4
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 4
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Checking if Camera 5 is present in Camera Message Router CamList
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Adding Camera 5 to Camera Message Router
+2017-10-04 16:52:06,911 - __main__   - DEBUG    - Checking if Camera 5 is present in OSC Message Listener CamList
+2017-10-04 16:52:06,913 - __main__   - DEBUG    - Adding Camera 5 to OSC Message Listener
+2017-10-04 16:52:06,913 - __main__   - INFO     - Starting Incoming Processor for Camera 5
+2017-10-04 16:52:06,913 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 5
+2017-10-04 16:52:06,913 - __main__   - INFO     - Starting Outgoing Processor for Camera 5
+2017-10-04 16:52:06,913 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 5
+2017-10-04 16:52:06,913 - root       - INFO     - Starting OSC Listener
+2017-10-04 16:52:06,914 - root       - INFO     - Starting Camera Message Router
+2017-10-04 16:52:06,914 - __main__   - DEBUG    - Initializing Camera Router Socket
+2017-10-04 16:52:06,914 - __main__   - DEBUG    - Camera router waiting for message
+2017-10-04 16:52:06,917 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 16:55:55,653 - __main__   - DEBUG    - Raw OSC Message (('127.0.0.1', 56877)): 192.168.0.110::52381::01000007000000008101043F020aff<?>
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Converting OSC Message to Camera Message
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 16:55:55,667 - __main__   - INFO     - OSC Message Received: 01000007000000008101043F020aff
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Comparing Camera 1 IP(192.168.0.110) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:55:55,667 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Adding message(00000000) to Camera 1 Outgoing Q
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Adding Outgoing Message(00000000) to Camera 1
+2017-10-04 16:55:55,668 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,668 - __main__   - INFO     - Camera 1 Q: 1
+2017-10-04 16:55:55,670 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Comparing Camera 2 IP(192.168.0.120) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Incrementing sequence: Old=00000000, New=00000001
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Comparing Camera 3 IP(192.168.0.130) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Converting sequence list to hex list
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Inserting new sequence number into Camera Message
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Comparing Camera 4 IP(192.168.0.140) to outgoing OSC message(00000001) IP(192.168.0.110)
+2017-10-04 16:55:55,671 - __main__   - INFO     - Sending Message to Camera 1: 01000007000000018101043F020aff
+2017-10-04 16:55:55,671 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:55:55,673 - __main__   - DEBUG    - Returning camera message hex format
+2017-10-04 16:55:55,673 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:55:55,673 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 16:55:55,673 - __main__   - DEBUG    - Comparing Camera 5 IP(192.168.0.150) to outgoing OSC message(00000001) IP(192.168.0.110)
+2017-10-04 16:55:55,687 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 16:56:00,707 - __main__   - INFO     - message timeout handler started, seq ['00', '00', '00', '01']
+2017-10-04 16:56:00,707 - __main__   - INFO     - message timeout handler: active message is not none
+2017-10-04 16:56:00,707 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:00,707 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:00,707 - __main__   - INFO     - message timeout handler: Active message seq is 00000001
+2017-10-04 16:56:00,709 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:00,709 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,861 - __main__   - DEBUG    - Raw OSC Message (('127.0.0.1', 61178)): 192.168.0.110::52381::01000007000000008101043F020eff<?>
+2017-10-04 16:56:19,861 - __main__   - DEBUG    - Converting OSC Message to Camera Message
+2017-10-04 16:56:19,861 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 16:56:19,861 - __main__   - INFO     - OSC Message Received: 01000007000000008101043F020eff
+2017-10-04 16:56:19,861 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,862 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,862 - __main__   - DEBUG    - Comparing Camera 1 IP(192.168.0.110) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:56:19,862 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Adding message(00000000) to Camera 1 Outgoing Q
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Adding Outgoing Message(00000000) to Camera 1
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,864 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Comparing Camera 2 IP(192.168.0.120) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Comparing Camera 3 IP(192.168.0.130) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Comparing Camera 4 IP(192.168.0.140) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Comparing Camera 5 IP(192.168.0.150) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 16:56:19,865 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 17:04:01,522 - root       - INFO     - Starting pyIPVisca
+2017-10-04 17:04:01,522 - __main__   - DEBUG    - Checking if Camera 1 is present in Camera Message Router CamList
+2017-10-04 17:04:01,522 - __main__   - DEBUG    - Adding Camera 1 to Camera Message Router
+2017-10-04 17:04:01,522 - __main__   - DEBUG    - Checking if Camera 1 is present in OSC Message Listener CamList
+2017-10-04 17:04:01,522 - __main__   - DEBUG    - Adding Camera 1 to OSC Message Listener
+2017-10-04 17:04:01,522 - __main__   - INFO     - Starting Incoming Processor for Camera 1
+2017-10-04 17:04:01,523 - __main__   - INFO     - Starting Outgoing Processor for Camera 1
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 1
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Checking if Camera 2 is present in Camera Message Router CamList
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Adding Camera 2 to Camera Message Router
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Checking if Camera 2 is present in OSC Message Listener CamList
+2017-10-04 17:04:01,523 - __main__   - DEBUG    - Adding Camera 2 to OSC Message Listener
+2017-10-04 17:04:01,523 - __main__   - INFO     - Starting Incoming Processor for Camera 2
+2017-10-04 17:04:01,525 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 2
+2017-10-04 17:04:01,525 - __main__   - INFO     - Starting Outgoing Processor for Camera 2
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 2
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Checking if Camera 3 is present in Camera Message Router CamList
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Adding Camera 3 to Camera Message Router
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Checking if Camera 3 is present in OSC Message Listener CamList
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Adding Camera 3 to OSC Message Listener
+2017-10-04 17:04:01,526 - __main__   - INFO     - Starting Incoming Processor for Camera 3
+2017-10-04 17:04:01,526 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 3
+2017-10-04 17:04:01,526 - __main__   - INFO     - Starting Outgoing Processor for Camera 3
+2017-10-04 17:04:01,528 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 3
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Checking if Camera 4 is present in Camera Message Router CamList
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Adding Camera 4 to Camera Message Router
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Checking if Camera 4 is present in OSC Message Listener CamList
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Adding Camera 4 to OSC Message Listener
+2017-10-04 17:04:01,529 - __main__   - INFO     - Starting Incoming Processor for Camera 4
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 4
+2017-10-04 17:04:01,529 - __main__   - INFO     - Starting Outgoing Processor for Camera 4
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 4
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Checking if Camera 5 is present in Camera Message Router CamList
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Adding Camera 5 to Camera Message Router
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Checking if Camera 5 is present in OSC Message Listener CamList
+2017-10-04 17:04:01,529 - __main__   - DEBUG    - Adding Camera 5 to OSC Message Listener
+2017-10-04 17:04:01,529 - __main__   - INFO     - Starting Incoming Processor for Camera 5
+2017-10-04 17:04:01,530 - __main__   - DEBUG    - Waiting for Incoming Message Event on Camera 5
+2017-10-04 17:04:01,530 - __main__   - INFO     - Starting Outgoing Processor for Camera 5
+2017-10-04 17:04:01,530 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 5
+2017-10-04 17:04:01,530 - root       - INFO     - Starting OSC Listener
+2017-10-04 17:04:01,530 - root       - INFO     - Starting Camera Message Router
+2017-10-04 17:04:01,532 - __main__   - DEBUG    - Initializing Camera Router Socket
+2017-10-04 17:04:01,532 - __main__   - DEBUG    - Camera router waiting for message
+2017-10-04 17:04:01,535 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 17:04:03,549 - __main__   - DEBUG    - Raw OSC Message (('127.0.0.1', 55808)): 192.168.0.110::52381::01000007000000008101043F0200ff<?>
+2017-10-04 17:04:03,549 - __main__   - DEBUG    - Converting OSC Message to Camera Message
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:03,551 - __main__   - INFO     - OSC Message Received: 01000007000000008101043F0200ff
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Comparing Camera 1 IP(192.168.0.110) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Adding message(00000000) to Camera 1 Outgoing Q
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Adding Outgoing Message(00000000) to Camera 1
+2017-10-04 17:04:03,551 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,552 - __main__   - INFO     - Camera 1 Q: 1
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Comparing Camera 2 IP(192.168.0.120) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Incrementing sequence: Old=00000000, New=00000001
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Comparing Camera 3 IP(192.168.0.130) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Converting sequence list to hex list
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Inserting new sequence number into Camera Message
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Comparing Camera 4 IP(192.168.0.140) to outgoing OSC message(00000001) IP(192.168.0.110)
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:03,552 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:03,552 - __main__   - INFO     - Sending Message to Camera 1: 01000007000000018101043F0200ff
+2017-10-04 17:04:03,553 - __main__   - DEBUG    - Comparing Camera 5 IP(192.168.0.150) to outgoing OSC message(00000001) IP(192.168.0.110)
+2017-10-04 17:04:03,553 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 17:04:03,553 - __main__   - DEBUG    - Returning camera message hex format
+2017-10-04 17:04:03,553 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:08,558 - __main__   - INFO     - message timeout handler started, seq 00000001
+2017-10-04 17:04:08,558 - __main__   - INFO     - message timeout handler: active message is not none
+2017-10-04 17:04:08,559 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:08,559 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:08,559 - __main__   - INFO     - message timeout handler: Active message seq is 00000001
+2017-10-04 17:04:08,559 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:08,559 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:08,559 - __main__   - INFO     - message timeout handler: seq match
+2017-10-04 17:04:08,559 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-04 17:04:21,960 - __main__   - DEBUG    - Raw OSC Message (('127.0.0.1', 54162)): 192.168.0.110::52381::01000007000000008101043F0204ff<?>
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Converting OSC Message to Camera Message
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:21,961 - __main__   - INFO     - OSC Message Received: 01000007000000008101043F0204ff
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Comparing Camera 1 IP(192.168.0.110) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Adding message(00000000) to Camera 1 Outgoing Q
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,961 - __main__   - DEBUG    - Adding Outgoing Message(00000000) to Camera 1
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,963 - __main__   - INFO     - Camera 1 Q: 1
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Comparing Camera 2 IP(192.168.0.120) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Incrementing sequence: Old=00000001, New=00000002
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Comparing Camera 3 IP(192.168.0.130) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Converting sequence list to hex list
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Inserting new sequence number into Camera Message
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Comparing Camera 4 IP(192.168.0.140) to outgoing OSC message(00000002) IP(192.168.0.110)
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:21,963 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:21,963 - __main__   - INFO     - Sending Message to Camera 1: 01000007000000028101043F0204ff
+2017-10-04 17:04:21,964 - __main__   - DEBUG    - Comparing Camera 5 IP(192.168.0.150) to outgoing OSC message(00000002) IP(192.168.0.110)
+2017-10-04 17:04:21,964 - __main__   - DEBUG    - Returning camera message hex format
+2017-10-04 17:04:21,964 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 17:04:21,964 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:26,966 - __main__   - INFO     - message timeout handler started, seq 00000002
+2017-10-04 17:04:26,966 - __main__   - INFO     - message timeout handler: active message is not none
+2017-10-04 17:04:26,966 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:26,966 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:26,967 - __main__   - INFO     - message timeout handler: Active message seq is 00000002
+2017-10-04 17:04:26,967 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:26,967 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:26,967 - __main__   - INFO     - message timeout handler: seq match
+2017-10-04 17:04:26,967 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Raw OSC Message (('127.0.0.1', 59630)): 192.168.0.110::52381::01000007000000008101043F020eff<?>
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Converting OSC Message to Camera Message
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:38,513 - __main__   - INFO     - OSC Message Received: 01000007000000008101043F020eff
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Comparing Camera 1 IP(192.168.0.110) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,513 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Adding message(00000000) to Camera 1 Outgoing Q
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Adding Outgoing Message(00000000) to Camera 1
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,515 - __main__   - INFO     - Camera 1 Q: 1
+2017-10-04 17:04:38,515 - __main__   - DEBUG    - Comparing Camera 2 IP(192.168.0.120) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Converting sequence list to hex string
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Comparing Camera 3 IP(192.168.0.130) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Incrementing sequence: Old=00000002, New=00000003
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Converting sequence list to hex list
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Inserting new sequence number into Camera Message
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Comparing Camera 4 IP(192.168.0.140) to outgoing OSC message(00000000) IP(192.168.0.110)
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Comparing Camera 5 IP(192.168.0.150) to outgoing OSC message(00000003) IP(192.168.0.110)
+2017-10-04 17:04:38,516 - __main__   - INFO     - Sending Message to Camera 1: 01000007000000038101043F020eff
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Initializing OSC Listener Socket
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message hex format
+2017-10-04 17:04:38,516 - __main__   - DEBUG    - Returning camera message in string format
+2017-10-04 17:04:43,517 - __main__   - INFO     - message timeout handler started, seq 00000003
+2017-10-04 17:04:43,517 - __main__   - INFO     - message timeout handler: active message is not none
+2017-10-04 17:04:43,517 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:43,519 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:43,519 - __main__   - INFO     - message timeout handler: Active message seq is 00000003
+2017-10-04 17:04:43,519 - __main__   - DEBUG    - Returning camera message sequence number in string format
+2017-10-04 17:04:43,519 - __main__   - DEBUG    - Returning camera message sequence number in list format
+2017-10-04 17:04:43,519 - __main__   - INFO     - message timeout handler: seq match
+2017-10-04 17:04:43,519 - __main__   - DEBUG    - Waiting for Outgoing Message Event on Camera 1

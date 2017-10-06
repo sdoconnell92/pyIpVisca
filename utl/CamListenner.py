@@ -25,9 +25,6 @@ def wait_for_udp_packet(udp_ip, udp_port):
         # grab any messages
         data, addr = sock.recvfrom(1024)  # buffer size is 1024 bytes
         datastr = str(data.encode("hex"))
-        if datastr.find('906003ff') != -1:
-            print('!ERROR!: Command Buffer Full !!!')
-            logging.debug('!ERROR!: Command Buffer Full !!!')
         d = datetime.datetime.now()
         currentTime = str(d.minute) + str(d.second) + ":" + str(d.microsecond)
         print("{" + currentTime + "} Cam Message From [" + str(addr) + "]: ", data.encode('hex'))
