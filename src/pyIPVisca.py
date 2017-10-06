@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import socket
 import threading
 import random
@@ -194,7 +196,7 @@ class Camera:
                           (self.CamNumber, seq_number))
         if self.ActiveMessage is not None:
             if self.ActiveMessage.CamMessage.get_seq_string() == seq_number:
-                self.Logger.debug('Setting Active Message to None on Camera %d due to timeout' % self.CamNumber)
+                self.Logger.info('Setting Active Message to None on Camera %d due to timeout' % self.CamNumber)
                 self.ActiveMessage = None
 
     def add_outgoing(self, message):
@@ -229,7 +231,7 @@ class CamMessageRouter:
 
         while True:
             self.Logger.debug("Camera router waiting for message")
-            data, addr = sock.recvfrom(1024)
+            data, addr = sock.recvfrom(24)
             # We have received data
 
             # Create a message object
@@ -529,6 +531,8 @@ def safe_print(message):
 
 
 if __name__ == '__main__':
+    version = 'v2.0.1'
+    safe_print('Starting pyIPVisca %s' % version)
     # Start logging module
     logging.getLogger().setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(asctime)s - %(name)-10s - %(levelname)-8s - %(message)s')
