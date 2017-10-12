@@ -6,6 +6,7 @@ import random
 import logging
 import re
 import time
+import datetime
 
 
 class Camera:
@@ -43,15 +44,15 @@ class Camera:
     def incoming_processor(self):
         while True:
             if len(self.IncomingQ) == 0:
-                self.Logger.debug('Waiting for Incoming Message Event on Camera ' + str(self.CamNumber))
+                # self.Logger.debug('Waiting for Incoming Message Event on Camera ' + str(self.CamNumber))
                 self.IncomingEvent.wait()
             else:
                 # Process any Incoming messages
                 for i1 in range(0, len(self.IncomingQ)):
                     msg = self.IncomingQ.pop(0)
-                    logging.debug('Handling message from Camera '
-                                  + str(self.CamNumber) + ": "
-                                  + msg.message)
+                    # logging.debug('Handling message from Camera '
+                    #              + str(self.CamNumber) + ": "
+                    #              + msg.message)
                     self.interpret_incoming(msg)
                 
     def outgoing_processor(self):
@@ -62,9 +63,9 @@ class Camera:
                     self.Logger.debug('Waiting for Outgoing Message Event on Camera ' + str(self.CamNumber))
                     self.OutgoingEvent.wait()
                 else:
-                    self.Logger.info('Camera %d Q: %d' % (self.CamNumber, len(self.OutgoingQ)))
                     self.ActiveMessage = self.OutgoingQ.pop(0)
                     self.send_message()
+                    self.Logger.info('Camera %d Q: %d' % (self.CamNumber, len(self.OutgoingQ)))
 
     def send_message(self):
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -83,7 +84,7 @@ class Camera:
                         (self.ActiveMessage.CamMessage.IP, self.ActiveMessage.CamMessage.Port))
 
             self.ActiveMessage.CamMessage.set_sent_time()
-            msg_timeout = threading.Timer(5, self.message_timeout_handler, [seq_string])
+            msg_timeout = threading.Timer(7, self.message_timeout_handler, [seq_string])
             msg_timeout.start()
 
             sock.close()
@@ -192,8 +193,8 @@ class Camera:
                 self.Logger.error('Unrecognized Response From Camera %d' % self.CamNumber)
 
     def message_timeout_handler(self, seq_number):
-        self.Logger.debug('Message timeout handler started on Camera %d, seq %s' %
-                          (self.CamNumber, seq_number))
+        # self.Logger.debug('Message timeout handler started on Camera %d, seq %s' %
+        #                  (self.CamNumber, seq_number))
         if self.ActiveMessage is not None:
             if self.ActiveMessage.CamMessage.get_seq_string() == seq_number:
                 self.Logger.info('Setting Active Message to None on Camera %d due to timeout' % self.CamNumber)
@@ -230,7 +231,7 @@ class CamMessageRouter:
             self.Logger.exception('Error encountered when trying to bind router socket to computer ip')
 
         while True:
-            self.Logger.debug("Camera router waiting for message")
+            # self.Logger.debug("Camera router waiting for message")
             data, addr = sock.recvfrom(24)
             # We have received data
 
@@ -241,8 +242,8 @@ class CamMessageRouter:
 
             # Lets check which camera it belongs to
             for cam in self.CamList:
-                self.Logger.debug("Comparing Camera %d IP(%s) to incoming message(%s) IP(%s)" %
-                                  (cam.CamNumber, cam.IP, message.get_seq_string(), str(addr[0])))
+                # self.Logger.debug("Comparing Camera %d IP(%s) to incoming message(%s) IP(%s)" %
+                #                  (cam.CamNumber, cam.IP, message.get_seq_string(), str(addr[0])))
                 if cam.IP == str(addr[0]):
                     # found a matching camera
                     # Pass the message along to the camera
@@ -274,7 +275,7 @@ class OSCListener:
             self.Logger.exception('Error encountered when trying to bind listener socket to localhost')
 
         while True:
-            self.Logger.debug('Initializing OSC Listener Socket')
+            # self.Logger.debug('Initializing OSC Listener Socket')
             data, addr = sock.recvfrom(1024)
 
             self.Logger.debug('Raw OSC Message (%s): %s' % (addr, data))
@@ -284,15 +285,15 @@ class OSCListener:
             msg = OSCMessage(OSCMessage.convert_to_string(data))
             msg.convert_to_cam_message()
 
-            self.Logger.info("OSC Message Received: %s" % msg.CamMessage.message)
+            # self.Logger.info("OSC Message Received: %s" % msg.CamMessage.message)
 
             # find the camera it is meant for
             for cam in self.CamList:
-                self.Logger.debug("Comparing Camera %d IP(%s) to outgoing OSC message(%s) IP(%s)" %
-                                  (cam.CamNumber, cam.IP, msg.CamMessage.get_seq_string(), msg.CamMessage.IP))
+                # self.Logger.debug("Comparing Camera %d IP(%s) to outgoing OSC message(%s) IP(%s)" %
+                #                  (cam.CamNumber, cam.IP, msg.CamMessage.get_seq_string(), msg.CamMessage.IP))
                 if msg.CamMessage.IP == cam.IP:
-                    self.Logger.debug("Adding message(%s) to Camera %d Outgoing Q" %
-                                      (msg.CamMessage.get_seq_string(), cam.CamNumber))
+                    # self.Logger.debug("Adding message(%s) to Camera %d Outgoing Q" %
+                    #                  (msg.CamMessage.get_seq_string(), cam.CamNumber))
                     cam.add_outgoing(msg)
                     
     def add_camera(self, camera):
@@ -317,7 +318,7 @@ class CameraMessage:
 
     @property
     def message(self):
-        self.Logger.debug('Returning camera message in string format')
+        # self.Logger.debug('Returning camera message in string format')
         l = []
         for i in self.MessageDeconstructed:
             l.append(str(i))
@@ -325,11 +326,11 @@ class CameraMessage:
     
     @property
     def sequence(self):
-        self.Logger.debug('Returning camera message sequence number in list format')
+        # self.Logger.debug('Returning camera message sequence number in list format')
         return self.MessageDeconstructed[4:8]
 
     def get_hex(self):
-        self.Logger.debug('Returning camera message hex format')
+        # self.Logger.debug('Returning camera message hex format')
         return self.message.decode('hex')
 
     @staticmethod
@@ -341,31 +342,31 @@ class CameraMessage:
         return re.findall(r'.{1,2}', message, re.DOTALL)
 
     def get_seq_string(self):
-        self.Logger.debug('Returning camera message sequence number in string format')
+        # self.Logger.debug('Returning camera message sequence number in string format')
         l = []
         for i in self.sequence:
             l.append(str(i))
         return ''.join(l)
 
     def insert_seq(self, sequence):
-        self.Logger.debug('Inserting new sequence number into Camera Message')
+        # self.Logger.debug('Inserting new sequence number into Camera Message')
         if len(self.MessageDeconstructed) != 0:
             self.MessageDeconstructed[4:8] = sequence
 
     def get_header(self):
-        self.Logger.debug('Returning camera message header in string format')
+        # self.Logger.debug('Returning camera message header in string format')
         return ''.join(self.MessageDeconstructed[:8])
 
     def get_payload(self):
-        self.Logger.debug('Returning camera message payload in string format')
+        # self.Logger.debug('Returning camera message payload in string format')
         return ''.join(self.MessageDeconstructed[8:])
 
     def get_payload_type(self):
-        self.Logger.debug('Returning camera message payload type in string format')
+        # self.Logger.debug('Returning camera message payload type in string format')
         return ''.join(self.MessageDeconstructed[:2])
 
     def get_payload_length(self):
-        self.Logger.debug('Returning camera message payload length in string format')
+        # self.Logger.debug('Returning camera message payload length in string format')
         return ''.join(self.MessageDeconstructed[2:4])
 
     def set_sent_time(self):
@@ -383,7 +384,7 @@ class OSCMessage:
         return data.decode()
 
     def convert_to_cam_message(self):
-        self.Logger.debug('Converting OSC Message to Camera Message')
+        # self.Logger.debug('Converting OSC Message to Camera Message')
         result = self.convert_osc_udp(self.Message)
         self.CamMessage = CameraMessage(result[2])
         self.CamMessage.IP = result[0]
@@ -495,7 +496,7 @@ class SequenceCounter:
         self.Logger = logging.getLogger(__name__)
 
     def increment(self):
-        old_seq = self.to_hex()
+        # old_seq = self.to_hex()
         self.lock.acquire()
         if self.seq[3] != 255:
             self.seq[3] += 1
@@ -508,18 +509,18 @@ class SequenceCounter:
         else:
             self.seq = [0, 0, 0, 0]
         self.lock.release()
-        self.Logger.debug('Incrementing sequence: Old=%s, New=%s' % (old_seq, self.to_hex()))
+        # self.Logger.debug('Incrementing sequence: Old=%s, New=%s' % (old_seq, self.to_hex()))
         return self.to_hex_list()
 
     def to_hex(self):
-        self.Logger.debug('Converting sequence list to hex string')
+        # self.Logger.debug('Converting sequence list to hex string')
         output = ''
         for s in self.seq:
             output += str("%0.2X" % int(s))
         return output
 
     def to_hex_list(self):
-        self.Logger.debug('Converting sequence list to hex list')
+        # self.Logger.debug('Converting sequence list to hex list')
         output = []
         for i in self.seq:
             output.append(str("%0.2X" % int(i)))
@@ -531,13 +532,18 @@ def safe_print(message):
 
 
 if __name__ == '__main__':
-    version = 'v2.0.1'
+    version = 'v2.0.3'
     safe_print('Starting pyIPVisca %s' % version)
     # Start logging module
     logging.getLogger().setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(asctime)s - %(name)-10s - %(levelname)-8s - %(message)s')
 
-    fh = logging.FileHandler('pyIPVisca.log')
+    # get the current timestamp to use in log file name
+    ts = time.time()
+    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    log_filepath = '/Users/symphonicvision/Desktop/Cam Communication/logs/'
+    log_filename = 'pyIPVisca_%s.log' % st
+    fh = logging.FileHandler('%s%s' % (log_filepath, log_filename))
     fh.setFormatter(formatter)
     fh.setLevel(logging.DEBUG)
 
@@ -550,7 +556,7 @@ if __name__ == '__main__':
 
     msg_comp_time = 'msg_comp_time'
     logging.getLogger(msg_comp_time).propagate = False
-    fhc = logging.FileHandler('Msg_Completion_Time.log')
+    fhc = logging.FileHandler('%sMsg_Completion_Time_%s.log' % (log_filepath, st))
     logging.getLogger(msg_comp_time).addHandler(fhc)
 
     # Create a sequence Counter Object

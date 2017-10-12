@@ -3,6 +3,7 @@ import multiprocessing
 import time
 import datetime
 import logging
+import src.pyIPVisca as pyIPVisca
 
 
 def send_udp_packet(udp_ip, udp_port, message):
@@ -29,8 +30,9 @@ def send_udp_packet(udp_ip, udp_port, message):
 
 
 if __name__ == '__main__':
-    ip = '192.168.0.110'
+    ip = '192.168.0.140'
     port = 52381
+    camdir = pyIPVisca.CamMessages()
 
     clear_message = '01000000ffffffff'
     go_home = '010000050000003a81010604ff'
@@ -38,6 +40,9 @@ if __name__ == '__main__':
     go_preset1 = '01000007000000ff8101043F0200ff'
     GoPreset2 = '01000007000000238101043F0201ff'
 
-    send_udp_packet(ip, port, go_preset1)
-    send_udp_packet(ip, port, GoPreset2)
-    send_udp_packet(ip, port, go_home)
+    preset_header = '01000007'
+    msg1 = preset_header + '00000004' + camdir.GoPreset5
+    msg2 = preset_header + '00000004' + camdir.GoPreset5
+    send_udp_packet(ip, port, msg1)
+    time.sleep(.05)
+    send_udp_packet(ip, port, msg2)
